@@ -1,0 +1,114 @@
+{
+    "title": "example course",
+    "url": "http://data-gov.tw.rpi.edu/vocab/Dataset_1200",
+    "abstract": "This is a sample abstract, which is just a short discription of this course.",
+    "description": "This is a description of this course.",
+    "categories": [
+        "computer science",
+        "internet"
+    ],
+    "difficulty": "Easy",
+    "requirements": [
+        "requirement1",
+        "requirement2"
+    ],
+    "goals": [
+        "learn sth.",
+        "goal2"
+    ],
+    "costs": 0,
+    "languages": [
+        "english"
+    ],
+    "worklaod": 12,
+    "start": "2014-07-01T12:00:00",
+    "end": "2014-09-01T12:00:00",
+    "duration": "P8W",
+    "picture": {
+        "file": "..."
+    },
+    "video": {
+        "file": "..."
+    },
+    "certificate": {
+        "type": "honor code certificate",
+        "user": {
+            "name": "Max Mustermann",
+            "email": "max.mustermann@gmail.com",
+            "dob": "12.09.1984",
+            "affiliation": "german"
+        },
+        "issuingPlatform": {
+            "name": "OpenHPI",
+            "description": "OpenHPI description"
+        },
+        "issueDate": "2014-08-01T12:00:00",
+        "signedByIssuePerson": true,
+        "issuerPersons": [
+            "Martina Musterfrau"
+        ],
+        "safety": {
+            "verificationURI": "...",
+            "qrCode": "..."
+        },
+        "grade": {
+            "badges": "with distinction",
+            "totalPoints": 100,
+            "percentage": 70,
+            "positionInCourse": 70,
+            "progress": 90,
+            "protoring": {
+                "isProtored": true,
+                "type": "...",
+                "institution": "ref to hpi",
+                "technology": "..."
+            }
+        },
+        "learningObject": [
+            "..."
+        ],
+        "requirements": [
+            "..."
+        ],
+        "courseSchema": 23,
+        "workload": 12,
+        "issuingInstitute": "ref to hpi",
+        "display": "...",
+        "disclaimer": "...",
+        "courseID": 1
+    },
+    "instructors": [
+        {
+            "name": "Max Mustermann",
+            "role": "exercise instructor"
+        }
+    ],
+    "partnerInstiute": {
+        "name": "Hasso-Plattner-Institut",
+        "description": "Hasso-Plattner-Institut description ..."
+    },
+    "moocProvider": "OpenHPI",
+    "subject": {
+        "type": "chapter",
+        "videos": [
+            "test.wav"
+        ],
+        "discription": "This is a sample description for this sample chapter.",
+        "questions": [
+            "Question1"
+        ]
+    },
+    "deadline": {
+        "questions": [
+            "Question1"
+        ],
+        "status": "returned",
+        "importantForCertificate": false,
+        "start": "2014-07-02T12:00:00",
+        "end": "2014-07-03T12:00:00",
+        "title": "Deadline1"
+    },
+    "announcements": "sample announcements",
+    "hashtag": "#sampeCourse",
+    "entity": 127234683
+}

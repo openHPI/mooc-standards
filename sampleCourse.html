@@ -1,0 +1,182 @@
+<div itemscope itemtype="http:schema.org/Course" id="course1">
+
+	<span itemprop="title" itemtype="http://schema.org/Title">example course</span>
+
+	<meta itemprop="url" itemtype="http://schema.org/Url" content="http://data-gov.tw.rpi.edu/vocab/Dataset_1200"/>
+	
+	<span itemprop="abstract" itemtype="http://schema.org/Text">
+		This is a sample abstract, which is just a short discription of this course.
+	</span>
+
+	<span itemprop="description" itemtype="http://schema.org/Description">
+		This is a description of this course.
+	</span>
+
+	<span itemprop="categories" itemtype="http://schema.org/Enumeration">
+		<span itemscope itemtype="http://schema.org/Category">This is a description of this course.</span>
+		<!-- ... -->
+	</span>
+
+	<span itemprop="difficulty" itemtype="http://schema.org/Enumeration">
+		<span itemscope itemtype="http://schema.org/Enumeration/Difficulty">Easy</span>
+		<!-- possible types are: Easy, Easy/medium, Medium, - -->
+	</span>
+
+	<span itemprop="requirements" itemtype="http://schema.org/Enumeration">					
+			<span itemscope itemtype="http://schema.org/Requiremts">Requirements</span>
+			<!-- ... -->
+	</span>
+
+	<span itemprop="goals">		
+		<span itemscope itemtype="http://schema.org/Text">description of goals</span>
+	</span>
+
+	<!-- Number genau genug? -> Währung gehört auch dazu-->
+	<span itemprop="costs">
+		<span itemscope itemtype="http://schema.org/Number">0</span>
+	</span>
+
+	<span itemprop="languages" itemtype="http://schema.org/Enumeration">
+		<span itemscope itemtype="http://schema.org/Language">english</span>
+		<!-- ... -->
+	</span>
+
+	<!-- workload per week -->
+	<span itemprop="worklaod" itemtype="http://schema.org/Number">12</span>
+
+	<span itemprop="start" itemtype="http://schema.org/DateTime">2014-07-01T12:00:00</span>
+	
+	<span itemprop="end" itemtype="http://schema.org/DateTime">2014-09-01T12:00:00</span>
+	
+	<!-- nach ISO_8601 -->
+	<span itemprop="duration" itemtype="http://schema.org/Duration">P8W</span>
+
+	<span itemprop="picture" itemtype="http://schema.org/ImageObject">test.jpg</span>		
+
+	<span itemprop="video" itemtype="http://schema.org/VideoObject">test.wav</span>
+
+	<span itemprop="certificate" itemscope itemtype="http://schema.org/Intangible/Certificate">
+		<!-- possible others: 
+			certificate of accomplishment with highest distinction
+			statement of accomplishment
+			statement of participation
+			statement of attainment
+			honor code certificate
+		 -->
+		<span itemprop="type" itemtype="http://schema.org/Enummeration">honor code certificate</span>
+
+		<span itemprop="user" itemscope itemtype="http://schema.org/Person">
+			<span itemprop="name" itemtype="http://schema.org/Text">Max Mustermann</span>
+			<span itemprop="email" itemtype="http://schema.org/Text">max.mustermann@gmail.com</span>
+			<span itemprop="dob" itemtype="http://schema.org/Date">12.09.1984</span>
+			<span itemprop="affiliation" itemtype="http://schema.org/Text">german</span>
+		</span>
+
+		<!-- link -->
+		<span itemprop="issuingPlatform" itemscope itemtype="http://schema.org/Organization">
+			<span itemprop="name" itemtyp="http://schema.org/Text">OpenHPI</span>
+			<span itemprop="description" itemtyp="http://schema.org/Text">OpenHPI description</span>
+		</span>
+
+		<span itemprop="issueDate" itemtype="http://schema.org/DateTime">2014-08-01T12:00:00</span>
+
+		<span itemprop="signedByIssuePerson" itemtype="http://schema.org/Boolean">True</span>
+
+		<!-- Soll das nur im Kurs gespeichert werden-->
+		<span itemprop="issuerPersons" itemtype="http://schema.org/Enummeration">
+			<span itemscope itemtype="http://schema.org/Person">Martina Musterfrau</span>
+			<!-- ... -->
+		</span>
+
+		<span itemprop="safety" itemtype="http://schema.org/Intangible/Safety">
+			<span itemprop="verificationURI" itemtype="http://schema.org/Url">...</span>
+			<span itemprop="qrCode" itemtype="http://schema.org/Intangible/QrCode">...</span>
+		</span>
+
+		<span itemprop="grade" itemscope itemtype="http://schema.org/Intangible/Grade">
+			<span itemprop="badges" itemtype="http://schema.org/Enumeration">with distinction</span>
+			<span itemprop="TotalPoints" itemtype="http://schema.org/Float">100</span>
+			<span itemprop="percentage" itemtype="http://schema.org/Integer">70</span>
+			<!-- zu den besten X %-->
+			<span itemprop="positionInCourse" itemtype="http://schema.org/Number">20</span>
+			<span itemprop="progress" itemtype="http://schema.org/Number">80</span>
+			<span itemscope itemprop="protoring" itemtype="http://schema.org/Intangible/Protoring">
+				<span itemprop="isProtored" itemtype="http://schema.org/Boolean">True</span>
+				<span itemprop="type" itemtype="http://schema.org/Text">...</span>
+				<span itemprop="institution" itemtype="http://schema.org/Text" itemref="hpi"/>
+				<span itemprop="technology" itemtype="http://schema.org/Text">...</span>
+			</span>
+		</span>
+
+		<span itemprop="learningObject"  itemtype="http://schema.org/Enummeration">
+			<span itemscope itemtype="http://schema.org/Text">..</span>
+			<!-- ... -->
+		</span>
+
+		<span itemprop="requirements"  itemtype="http://schema.org/Enummeration">
+			<span itemscope itemtype="http://schema.org/Requirements">Requirement1</span>
+			<!-- ... -->
+		</span>
+
+		<span itemprop="courseSchema" itemtype="http://schema.org/Number">23</span>
+
+		<span itemprop="workload" itemtyp="http://schema.org/Number">12</span>
+
+		<span itemprop="issuingInstitute" itemtyp="http://schema.org/Organization" itemref="hpi"/>
+
+		<span itemprop="display" itemtyp="http://schema.org/Text">...</span>
+
+		<span itemprop="disclaimer" itemtyp="http://schema.org/Text">...</span>
+
+		<span itemprop="courseID" itemtype="http://schema.org/Number" itemref="1"/>
+	</span>
+
+	<span itemprop="instructors" itemtype="http://schema.org/Enumeration">
+		<span itemscope itemtype="http://schema.org/Person">Max Mustermann</span>
+		<span itemscope itemtype="http://schema.org/Role">exercise instructor</span>
+	</span>
+
+	<span itemprop="partnerInstiute" itemscope itemtype="http://schema.org/Organization" id="hpi">
+		<span itemprop="name" itemtype="http://schema.org/Text">Hasso-Plattner-Institut</span>
+		<span itemprop="description" itemtype="http://schema.org/Text">Hasso-Plattner-Institut description ...</span>
+	</span>
+	
+	<span itemprop="moocProvider" itemscope itemtype="http://schema.org/Organization">Open HPI</span>
+	</span>
+
+	<span itemprop="subject" itemscope itemtype="http://schema.org/CreativeWork/Subject">
+			<span itemprop="type">
+				<!--chapter, week, ...-->
+				<span itemscope itemtype="http://schema.org/Text">chapter</span>
+			</span>
+			<span itemprop="videos" itemtype="http://schema.org/Enumeration">
+				<span itemscope itemtype="http://schema.org/VideoObject">test.wav</span>
+				<!-- ... -->
+			</span>
+			<span itemprop="discription" itemtype="http://schema.org/Text">
+				This is a sample description for this sample chapter.
+			</span>
+			<span itemprop="questions" itemtype="http://schema.org/Enumeration">
+				<span itemscope itemtype="http://schema.org/Question">Question1</span>
+			</span>
+		</span>
+	</span>
+
+	<span itemprop="deadline" itemscope itemtype="http://schema.org/Intangible/Deadline">
+		<span itemprop="questions" itemtype="http://schema.org/Enumeration">
+			<span itemscope itemtype="http://schema.org/Question">Question1</span>
+			<!-- ... -->
+		</span>
+		<span itemprop="status" itemtype="http://schema.org/Text">returned</span>
+		<span itemprop="importantForCertificate" itemtype="http://schema.org/Boolean">False</span>
+		<span itemprop="start" itemtype="http://schema.org/DateTime">2014-07-02T12:00:00</span>
+		<span itemprop="end" itemtype="http://schema.org/DateTime">2014-07-03T12:00:00</span>
+		<span itemprop="title" itemtype="http://schema.org/Title">Deadline1</span>
+	</span>
+
+	<span itemprop="announcements" itemtype="http://schema.org/Text">sample announcements</span>
+
+	<span itemprop="hashtag" itemtype="http://schema.org/Text">#sampeCourse</span>
+
+	<span itemprop="entity" itemtype="http://schema.org/Number">127234683</span>
+</div>
