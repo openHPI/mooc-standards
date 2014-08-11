@@ -9,8 +9,8 @@ Afterwards we used the schema of schema.org to fit the properties in a formal wa
 
 To provide you an easy way to use this standard, we include a sample course in this repository.
 This sample course is represented in two forms: 
-	- One in schema.org form (sampleCourse.html Just open it with a text editor.)
-	- Another in JSON format
+* One in schema.org form (sampleCourse.html Just open it with a text editor.)
+* Another in JSON format
 
 What you can do
 ---------------
