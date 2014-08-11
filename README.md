@@ -15,5 +15,5 @@ This sample course is represented in two forms:
 What you can do
 ---------------
 
-This mooc-standard is finished yet.
+This mooc-standard is not finished yet.
 If you have any annotations for instance at your opinion a property should be renamed or we should add some properties, just request an issue on this github repository or drop an mail to jan.renz@hpi.de
