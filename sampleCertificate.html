@@ -20,7 +20,7 @@
 
 	<span itemprop="issueDate" itemscope itemtype="http://schema.org/DateTime">2014-08-01T12:00:00</span>
 
-	<span itemprop="issuingPersons" itemtype="http://schema.org/IssuinPersonList">
+	<span itemprop="issuingPersons" itemtype="http://schema.org/IssuingPersonList">
 		<span itemprop="issuingPerson" itemscope itemtype="http://schema.org/Instructor">
 			<span itemprop="name" itemtype="http://schema.org/Text">Christoph Meinel</span>
 			<span itemprop="academicTitle" itemtype="http://schema.org/AcademicTitle">Prof.</span>
@@ -44,20 +44,22 @@
 	</span>
 
 	<span itemprop="grade" itemscope itemtype="http://schema.org/Grade">
-		<span itemprop="badge" itemscope itemtype="http://schema.org/Badge">  //??BadgeList
-			<span itemprop="type" itemscope itemtype="http://schema.org/BadgeType">Custom</span>
-			<span itemprop="name">with distinction</span>
+		<span itemprop="badges" itemtype="http://schema.org/BadgeList">
+			<span itemprop="badge" itemscope itemtype="http://schema.org/Badge">  //??BadgeList
+				<span itemprop="type" itemscope itemtype="http://schema.org/BadgeType">Custom</span>
+				<span itemprop="name">with distinction</span>
+			</span>
+			<span itemprop="badge" itemscope itemtype="http://schema.org/Badge">
+				<span itemprop="type" itemscope itemtype="http://schema.org/BadgeType">Mozilla Open Badge</span>
+				<span itemprop="name">Email Security</span>
+			</span>
+			<span itemprop="totalPoints" itemscope itemtype="http://schema.org/Float">100</span>
+			<span itemprop="percentage" itemscope itemtype="http://schema.org/Integer">70</span>
+			<span itemprop="minPercentage" itemscope itemtype="http://schema.org/Integer">50</span>
+			<!-- zu den besten X %-->
+			<span itemprop="positionInCourse" itemscope itemtype="http://schema.org/Number">20</span>
+			<span itemprop="progress" itemscope itemtype="http://schema.org/Number">80</span>
 		</span>
-		<span itemprop="badge" itemscope itemtype="http://schema.org/Badge">
-			<span itemprop="type" itemscope itemtype="http://schema.org/BadgeType">Mozilla Open Badge</span>
-			<span itemprop="name">Email Security</span>
-		</span>
-		<span itemprop="totalPoints" itemscope itemtype="http://schema.org/Float">100</span>
-		<span itemprop="percentage" itemscope itemtype="http://schema.org/Integer">70</span>
-		<span itemprop="minPercentage" itemscope itemtype="http://schema.org/Integer">50</span>
-		<!-- zu den besten X %-->
-		<span itemprop="positionInCourse" itemscope itemtype="http://schema.org/Number">20</span>
-		<span itemprop="progress" itemscope itemtype="http://schema.org/Number">80</span>
 	</span>
 
 	<span itemprop="courseSchema" itemscope itemtype="http://schema.org/Number">23</span>  //?? Was ist das??
