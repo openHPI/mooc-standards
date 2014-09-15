@@ -22,4 +22,4 @@ If you have any annotations for instance at your opinion a property should be re
 Acknowledgements
 ---------------
 - The workload attribute has been changed from type number to type range by suggestion of class-central.com
-- The license attribute has been added by sugestion of Laia Canals from openeducationeuropa.eu/paueducation.com
+- The license attribute has been added by suggestion of Laia Canals from openeducationeuropa.eu/paueducation.com
