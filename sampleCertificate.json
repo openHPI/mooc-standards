@@ -1,0 +1,57 @@
+"certificate": {
+    "type": "honor code certificate",
+    "participant": {
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "dob": "12.09.1984",
+        "memberOf": "ACME Inc."
+    },
+    "issuingPlatform": {
+        "name": "openHPI",
+        "description": "openHPI is the MOOC platform by HPI Potsdam"
+    },
+    "issuingPartnerInstitute": {
+        "name": "HPI",
+        "description": "Hasso Plattner Institute for Software Systems Engineering<"
+    },
+    "issueDate": "2014-08-01T12:00:00",
+    "signedByIssuingPerson": true,
+    "issuingPersons": [
+        {
+        	"name": "Christoph Meinel",
+			"academicTitle": ["Prof.", "Dr."],
+			"role": ["course instructor", "head of institute"]
+        }
+    ],
+    "verifiability": {
+        "verificationURI": "https://open.hpi.de/verify/xekaz-hyzur-natof-kuvip-kycud",
+        "qrCode": "...",
+		"isProctored":true,
+		"proctoring": {
+			"type": "IdentityCheck",
+			"institution": "ProctorX",
+			"technology": "Live Remote Proctoring",
+			"studentProctorRatio": 10
+		}
+    },
+    "grade": {
+        "badges": [
+			"with distinction",
+			"Email Security"
+		],
+        "totalPoints": 100,
+        "percentage": 70,
+		"minPercentage": 50,
+        "positionInCourse": 20,
+        "progress": 80
+    },
+    "courseSchema": 23,
+    "workload": {
+    	"lowerBound": 3,
+		"upperBound": 8
+    },
+    "issuingInstitute": "ref to hpi",
+    "display": "...",
+    "disclaimer": "...",
+    "courseID": "intsec2014"
+}

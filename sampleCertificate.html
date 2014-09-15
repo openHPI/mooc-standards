@@ -1,0 +1,70 @@
+<div itemprop="record" itemscope itemtype="http://schema.org/Certificate" id="security2014_certificate">
+	<span itemprop="type" itemtype="http://schema.org/CertificateType">honor code certificate</span>
+	<span itemprop="participant" itemscope itemtype="http://schema.org/Person">
+		<span itemprop="name">Jane Doe</span>
+		<span itemprop="email">jane.doe@example.com</span>
+		<meta itemprop="birthDate" itemscope itemtype="http://schema.org/Date" content="1984-09-12">12.09.1984
+		<span itemprop="memberOf">ACME Inc.</span> //affiliation (memberOf is more generic than worksFor)
+	</span>
+
+	<!-- link -->
+	<span itemprop="issuingPlatform" itemscope itemtype="http://schema.org/Organization" id="openHPI">
+		<span itemprop="name">openHPI</span>
+		<span itemprop="description">openHPI is the MOOC platform by HPI Potsdam</span>
+	</span>
+	
+	<span itemprop="issuingPartnerInstitute" itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="name">HPI</span>
+		<span itemprop="description">Hasso Plattner Institute for Software Systems Engineering</span>
+	</span>
+
+	<span itemprop="issueDate" itemscope itemtype="http://schema.org/DateTime">2014-08-01T12:00:00</span>
+
+	<span itemprop="issuingPersons" itemtype="http://schema.org/IssuinPersonList">
+		<span itemprop="issuingPerson" itemscope itemtype="http://schema.org/Instructor">
+			<span itemprop="name" itemtype="http://schema.org/Text">Christoph Meinel</span>
+			<span itemprop="academicTitle" itemtype="http://schema.org/AcademicTitle">Prof.</span>
+			<span itemprop="academicTitle" itemtype="http://schema.org/AcademicTitle">Dr.</span>
+			<span itemprop="role" itemscope itemtype="http://schema.org/Role">Course Instructor</span>
+			<span itemprop="role" itemscope itemtype="http://schema.org/Role">Head of Institute</span>
+		</span>
+	</span>
+	<span itemprop="signedByIssuingPerson" itemtype="http://schema.org/Boolean">True</span>
+
+	<span itemprop="verifiability" itemtype="http://schema.org/Verifiability">
+		<span itemprop="verificationUrl" itemtype="http://schema.org/Url">https://open.hpi.de/verify/xekaz-hyzur-natof-kuvip-kycud</span>
+		<span itemprop="qrCode" itemscope itemtype="http://schema.org/QRCode">...</span>  //was soll hier rein? Boolean?
+		<span itemprop="isProctored" itemscope itemtype="http://schema.org/Boolean">True</span>
+		<span itemprop="proctoring" itemscope itemtype="http://schema.org/Proctoring">
+			<span itemprop="type" itemscope itemtype="http://schema.org/ProctoringType">IdentityCheck</span>
+			<span itemprop="institution" itemscope itemtype="http://schema.org/Organization">ProctorX</span>
+			<span itemprop="technology" itemscope itemtype="http://schema.org/Text">Live Remote Proctoring</span>
+			<span itemprop="studentProctorRatio" itemscope itemtype="http://schema.org/Number">Live Proctoring</span>
+		</span>
+	</span>
+
+	<span itemprop="grade" itemscope itemtype="http://schema.org/Grade">
+		<span itemprop="badge" itemscope itemtype="http://schema.org/Badge">  //??BadgeList
+			<span itemprop="type" itemscope itemtype="http://schema.org/BadgeType">Custom</span>
+			<span itemprop="name">with distinction</span>
+		</span>
+		<span itemprop="badge" itemscope itemtype="http://schema.org/Badge">
+			<span itemprop="type" itemscope itemtype="http://schema.org/BadgeType">Mozilla Open Badge</span>
+			<span itemprop="name">Email Security</span>
+		</span>
+		<span itemprop="totalPoints" itemscope itemtype="http://schema.org/Float">100</span>
+		<span itemprop="percentage" itemscope itemtype="http://schema.org/Integer">70</span>
+		<span itemprop="minPercentage" itemscope itemtype="http://schema.org/Integer">50</span>
+		<!-- zu den besten X %-->
+		<span itemprop="positionInCourse" itemscope itemtype="http://schema.org/Number">20</span>
+		<span itemprop="progress" itemscope itemtype="http://schema.org/Number">80</span>
+	</span>
+
+	<span itemprop="courseSchema" itemscope itemtype="http://schema.org/Number">23</span>  //?? Was ist das??
+
+	<span itemprop="workload" itemscope itemtype="http://schema.org/Range"> // redundant zu course
+		<span itemprop="lowerBound">3</span>
+		<span itemprop="upperBound">8</span> 
+	</span>
+	<span itemprop="courseID" itemref="intsec2014"/>
+</div>

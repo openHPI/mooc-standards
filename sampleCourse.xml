@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with XMLSpear -->
+<course>
+    <title>Example Course</title>
+    <url>http://data-gov.tw.rpi.edu/vocab/Dataset_1200</url>
+    <abstract>This is a sample abstract, which is just a short discription of this course.</abstract>
+    <description>This is a description of this course.</description>
+    <categories>
+        <category>computer science</category>
+        <category>internet</category>
+    </categories>
+    <difficulty>Easy</difficulty>
+    <requirements>
+        <requirement>requirement1</requirement>
+        <requirement>requirement2</requirement>
+    </requirements>
+    <goals>
+        <goal>learn sth.</goal>
+        <goal>goal2</goal>
+    </goals>
+    <costs>0</costs>
+    <languages>
+        <language>English</language>
+    </languages>
+    <workload>12</workload> //range check xsl range
+    <start>2014-07-01T12:00:00</start>
+    <end>2014-09-01T12:00:00</end>
+    <duration>P8W</duration>
+    <picture>
+        <file>test.jpg</file>
+    </picture>
+    <video>
+        <file>test.wav</file>
+    </video>
+    <certificate>
+        <type>honor code certificate</type>
+        <user>
+            <name>Jane Doe</name>
+            <email>jane.doe@example.com</email>
+            <dob>12.09.1984</dob>
+            <affiliation>german</affiliation> ?????
+        </user>
+        <issuingPlatform>
+            <name>openHPI</name>
+            <description>openHPI description</description>
+        </issuingPlatform>
+        <issueDate>2014-08-01T12:00:00</issueDate>
+        <signedByIssuePerson>true</signedByIssuePerson>
+        <issuerPersons>
+            <issuerPerson>Martina Musterfrau</issuerPerson>
+        </issuerPersons>
+        <safety>
+            <verificationURI>...</verificationURI>
+            <qrCode>...</qrCode>
+        </safety>
+        <grade>
+            <badges>
+                <badge>with distinction</badge>
+            </badges>
+            <totalPoints>100</totalPoints>
+            <percentage>70</percentage>
+            <positionInCourse>70</positionInCourse>
+            <progress>90</progress>
+            <proctoring>
+                <isProctored>true</isProctored>
+                <type>...</type>
+                <institution>ref to hpi</institution>
+                <technology>...</technology>
+            </proctoring>
+        </grade>
+        <learningObjects>
+            <learningObject>...</learningObject>
+        </learningObjects>
+        <requirements>
+            <requirement>...</requirement>
+        </requirements>
+        <courseSchema>23</courseSchema>
+        <workload>12</workload> ///range ???
+        <issuingInstitute>ref to hpi</issuingInstitute>
+        <display>...</display>
+        <disclaimer>...</disclaimer>
+        <courseID>1</courseID>
+    </certificate>
+    <instructors>
+        <instructor>
+            <name>Max Mustermann</name>
+            <role>exercise instructor</role>
+        </instructor>
+    </instructors>
+    <partnerInstitute>
+        <name>Hasso-Plattner-Institut</name>
+        <description>Hasso-Plattner-Institut description ...</description>
+    </partnerInstitute>
+    <moocProvider>openHPI</moocProvider>
+    <subject>
+        <type>chapter</type>
+        <videos>
+            <video>test.wav</video>
+        </videos>
+        <description>This is a sample description for this sample chapter.</description>
+        <questions>
+            <question>Question1</question>
+        </questions>
+    </subject>
+    <deadlines>
+        <deadline>
+            <questions>
+                <question>Question1</question>
+            </questions>
+            <status>returned</status>
+            <importantForCertificate>false</importantForCertificate>
+            <start>2014-07-02T12:00:00</start>
+            <end>2014-07-03T12:00:00</end>
+            <title>Deadline1</title>
+        </deadline>
+    </deadlines>
+    <hashtag>#sampleCourse</hashtag>
+    <entity>127234683</entity>
+</course>

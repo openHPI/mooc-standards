@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="course">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="description"/>
+        <xs:element ref="end"/>
+        <xs:element ref="requirements"/>
+        <xs:element ref="start"/>
+        <xs:element ref="title"/>
+        <xs:element ref="video"/>
+        <xs:element ref="workload"/>
+        <xs:element ref="abstract"/>
+        <xs:element ref="announcements"/>
+        <xs:element ref="categories"/>
+        <xs:element ref="certificate"/>
+        <xs:element ref="costs"/>
+        <xs:element ref="deadlines"/>
+        <xs:element ref="difficulty"/>
+        <xs:element ref="duration"/>
+        <xs:element ref="entity"/>
+        <xs:element ref="goals"/>
+        <xs:element ref="hashtag"/>
+        <xs:element ref="instructors"/>
+        <xs:element ref="languages"/>
+        <xs:element ref="moocProvider"/>
+        <xs:element ref="partnerInstitute"/>
+        <xs:element ref="picture"/>
+        <xs:element ref="subject"/>
+        <xs:element ref="url"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="abstract" type="xs:string"/>
+  <xs:element name="announcements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="announcement"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="announcement" type="xs:string"/>
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="category"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category" type="xs:string"/>
+  <xs:element name="certificate">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="requirements"/>
+        <xs:element ref="type"/>
+        <xs:element ref="workload"/>
+        <xs:element ref="courseID"/>
+        <xs:element ref="courseSchema"/>
+        <xs:element ref="disclaimer"/>
+        <xs:element ref="display"/>
+        <xs:element ref="grade"/>
+        <xs:element ref="issueDate"/>
+        <xs:element ref="issuerPersons"/>
+        <xs:element ref="issuingInstitute"/>
+        <xs:element ref="issuingPlatform"/>
+        <xs:element ref="learningObjects"/>
+        <xs:element ref="safety"/>
+        <xs:element ref="signedByIssuePerson"/>
+        <xs:element ref="user"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="courseID" type="xs:integer"/>
+  <xs:element name="courseSchema" type="xs:integer"/>
+  <xs:element name="disclaimer" type="xs:NMTOKEN"/>
+  <xs:element name="display" type="xs:NMTOKEN"/>
+  <xs:element name="grade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="badges"/>
+        <xs:element ref="totalPoints"/>
+        <xs:element ref="percentage"/>
+        <xs:element ref="positionInCourse"/>
+        <xs:element ref="progress"/>
+        <xs:element ref="proctoring"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="badges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="badge"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="badge" type="xs:string"/>
+  <xs:element name="totalPoints" type="xs:integer"/>
+  <xs:element name="percentage" type="xs:integer"/>
+  <xs:element name="positionInCourse" type="xs:integer"/>
+  <xs:element name="progress" type="xs:integer"/>
+  <xs:element name="proctoring">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="isProctored"/>
+        <xs:element ref="type"/>
+        <xs:element ref="institution"/>
+        <xs:element ref="technology"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isProctored" type="xs:boolean"/>
+  <xs:element name="institution" type="xs:string"/>
+  <xs:element name="technology" type="xs:NMTOKEN"/>
+  <xs:element name="issueDate" type="xs:NMTOKEN"/>
+  <xs:element name="issuerPersons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="issuerPerson"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="issuerPerson" type="xs:string"/>
+  <xs:element name="issuingInstitute" type="xs:string"/>
+  <xs:element name="issuingPlatform">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="learningObjects">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="learningObject"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="learningObject" type="xs:NMTOKEN"/>
+  <xs:element name="safety">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="verificationURI"/>
+        <xs:element ref="qrCode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verificationURI" type="xs:NMTOKEN"/>
+  <xs:element name="qrCode" type="xs:NMTOKEN"/>
+  <xs:element name="signedByIssuePerson" type="xs:boolean"/>
+  <xs:element name="user">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="name"/>
+        <xs:element ref="affiliation"/>
+        <xs:element ref="dob"/>
+        <xs:element ref="email"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="affiliation" type="xs:NCName"/>
+  <xs:element name="dob" type="xs:NMTOKEN"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="costs" type="xs:integer"/>
+  <xs:element name="deadlines">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="deadline"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deadline">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="questions"/>
+        <xs:element ref="status"/>
+        <xs:element ref="importantForCertificate"/>
+        <xs:element ref="start"/>
+        <xs:element ref="end"/>
+        <xs:element ref="title"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="status" type="xs:NCName"/>
+  <xs:element name="importantForCertificate" type="xs:boolean"/>
+  <xs:element name="difficulty" type="xs:NCName"/>
+  <xs:element name="duration" type="xs:NCName"/>
+  <xs:element name="entity" type="xs:integer"/>
+  <xs:element name="goals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="goal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="goal" type="xs:string"/>
+  <xs:element name="hashtag" type="xs:string"/>
+  <xs:element name="instructors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="instructor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="instructor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="role"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="role" type="xs:string"/>
+  <xs:element name="languages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="language"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="language" type="xs:NCName"/>
+  <xs:element name="moocProvider" type="xs:NCName"/>
+  <xs:element name="partnerInstitute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="picture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="file"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="type"/>
+        <xs:element ref="videos"/>
+        <xs:element ref="description"/>
+        <xs:element ref="questions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="videos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="video"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url" type="xs:anyURI"/>
+  <xs:element name="type" type="xs:string"/>
+  <xs:element name="video">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="file"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="questions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="question"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="question" type="xs:NCName"/>
+  <xs:element name="requirements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="requirement"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="requirement" type="xs:NMTOKEN"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="workload" type="xs:integer"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="start" type="xs:NMTOKEN"/>
+  <xs:element name="end" type="xs:NMTOKEN"/>
+  <xs:element name="file" type="xs:NMTOKEN"/>
+</xs:schema>

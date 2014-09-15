@@ -1,114 +1,89 @@
 {
-    "title": "example course",
-    "url": "http://data-gov.tw.rpi.edu/vocab/Dataset_1200",
-    "abstract": "This is a sample abstract, which is just a short discription of this course.",
-    "description": "This is a description of this course.",
+    "name": "Example Course",
+    "url": "https://open.hpi.de/courses/intsec2014",
+    "abstract": "Pressemeldungen über den Diebstahl sensibler Daten in bislang ungekannten Größenordnungen verdeutlichen immer wieder...",
+    "description": "Der Kurs erklärt zunächst Grundbegriffe, wie z.B. \"Schwachstelle\", \"Angriff\" oder "Sicherheitszwischenfall"...",
     "categories": [
-        "computer science",
-        "internet"
+        "Computer Science",
+        "Internet"
     ],
-    "difficulty": "Easy",
+    "difficulty": "Beginner",
     "requirements": [
-        "requirement1",
-        "requirement2"
+        "Interest in Internet Security",
+        "courseref:internetworking2013"
     ],
-    "goals": [
-        "learn sth.",
-        "goal2"
+    "learningObjectives": [
+        "Be able to understand and recognize security issues in the internet.",
+        "Not: Be able to administrate a server securely"
     ],
-    "costs": 0,
+    "costs": {
+    	"priceCurrency": "EUR",
+		"price": 0
+    },
     "languages": [
-        "english"
+        "en"
     ],
-    "workload": 12,
-    "start": "2014-07-01T12:00:00",
-    "end": "2014-09-01T12:00:00",
+    "workload": {
+    	"lowerBound": 3,
+		"upperBound": 8
+    },
+    "startDate": "2014-07-01T12:00:00",
+    "endDate": "2014-09-01T12:00:00",
     "duration": "P8W",
-    "picture": {
-        "file": "..."
-    },
-    "video": {
-        "file": "..."
-    },
-    "certificate": {
-        "type": "honor code certificate",
-        "user": {
-            "name": "Max Mustermann",
-            "email": "max.mustermann@gmail.com",
-            "dob": "12.09.1984",
-            "affiliation": "german"
-        },
-        "issuingPlatform": {
-            "name": "OpenHPI",
-            "description": "OpenHPI description"
-        },
-        "issueDate": "2014-08-01T12:00:00",
-        "signedByIssuePerson": true,
-        "issuerPersons": [
-            "Martina Musterfrau"
-        ],
-        "safety": {
-            "verificationURI": "...",
-            "qrCode": "..."
-        },
-        "grade": {
-            "badges": "with distinction",
-            "totalPoints": 100,
-            "percentage": 70,
-            "positionInCourse": 70,
-            "progress": 90,
-            "protoring": {
-                "isProtored": true,
-                "type": "...",
-                "institution": "ref to hpi",
-                "technology": "..."
-            }
-        },
-        "learningObject": [
-            "..."
-        ],
-        "requirements": [
-            "..."
-        ],
-        "courseSchema": 23,
-        "workload": 12,
-        "issuingInstitute": "ref to hpi",
-        "display": "...",
-        "disclaimer": "...",
-        "courseID": 1
-    },
+    "image": "test.jpg",
+    "video": "test.wav",
     "instructors": [
         {
-            "name": "Max Mustermann",
+            "name": "Christoph Meinel",
+			"academicTitle": ["Prof.","Dr."],
+            "role": "course instructor"
+        },
+        {
+            "name": "Thomas Staubitz",
+			"academicTitle": ["M.Sc."],
             "role": "exercise instructor"
+        },
+        {
+            "name": "Feng Cheng",
+			"academicTitle": ["Dr."],
+            "role": "content expert"
         }
     ],
-    "partnerInstiute": {
-        "name": "Hasso-Plattner-Institut",
-        "description": "Hasso-Plattner-Institut description ..."
+    "partnerInstitute": {
+        "name": "Hasso Plattner Institute",
+        "description": "The Hasso Plattner Institute is a ..."
     },
-    "moocProvider": "OpenHPI",
-    "subject": {
-        "type": "chapter",
+    "moocProvider": "openHPI",
+    "units": [ {
+		"name":"Week 1",
+		"description": "Introductional Unit. Overview. Housekeeping, etc.",
         "videos": [
-            "test.wav"
+            "test.mp4"
         ],
-        "discription": "This is a sample description for this sample chapter.",
-        "questions": [
-            "Question1"
+        "assignments": [
+            {
+				"name": "Weekly Assignment 1",
+				"status":"returned",
+				"importantForCertificate": "false",
+				"startDate":"2014-07-02T12:00:00",
+				"endDate":"2014-07-03T12:00:00",
+            },
+            {
+				"name": "Weekly Assignment 2",
+				"status":"started", 
+				"importantForCertificate": "false",
+				"startDate":"2014-07-02T12:00:00",
+				"endDate": "2014-07-03T12:00:00",
+            }
         ]
-    },
-    "deadline": {
-        "questions": [
-            "Question1"
-        ],
-        "status": "returned",
-        "importantForCertificate": false,
-        "start": "2014-07-02T12:00:00",
-        "end": "2014-07-03T12:00:00",
-        "title": "Deadline1"
-    },
-    "announcements": "sample announcements",
-    "hashtag": "#sampeCourse",
-    "entity": 127234683
+		}
+	],
+    "hashtag": "#intsec2014",
+    "entity": 127234683,
+	"records": [
+		"security2014_certificate",
+		"security2014_RoA",
+		"security2014_CoP"
+	],
+	"license": "Proprietary"
 }

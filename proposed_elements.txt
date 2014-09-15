@@ -1,0 +1,34 @@
+EducationEvent
+	Course props: title, abstract, description
+	              categories{CategoryList}
+				  difficulty
+				  requirements
+				  goals
+				  costs
+				  
+	       inherited: url
+		   
+		   VideoList
+		     Video
+		   AssignmentList
+		     Assignment
+		   
+		   
+Person	   
+	academic_title
+		Prof.
+		Dr.
+		PhD
+		MD
+		M.Sc.
+		B.Sc.
+		Dipl.-Ing.
+		Dipl.-Ing.(FH)
+		Magister
+	
+Role
+	Course Instructor
+	Exercise Instructor
+	Teaching Assistant
+	Content Expert
+	Guest Lecturer
