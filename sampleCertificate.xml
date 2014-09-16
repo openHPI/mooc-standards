@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with XMLSpear -->
+<certificate>
+	<type>honor code certificate</type>
+	<user>
+		<name>Jane Doe</name>
+		<email>jane.doe@example.com</email>
+		<dob>12.09.1984</dob>
+		<affiliation>german</affiliation> ?????
+        </user>
+	<issuingPlatform>
+		<name>openHPI</name>
+		<description>openHPI description</description>
+	</issuingPlatform>
+	<issueDate>2014-08-01T12:00:00</issueDate>
+	<signedByIssuePerson>true</signedByIssuePerson>
+	<issuerPersons>
+		<issuerPerson>Martina Musterfrau</issuerPerson>
+	</issuerPersons>
+	<safety>
+		<verificationURI>...</verificationURI>
+		<qrCode>...</qrCode>
+	</safety>
+	<grade>
+		<badges>
+			<badge>with distinction</badge>
+		</badges>
+		<totalPoints>100</totalPoints>
+		<percentage>70</percentage>
+		<positionInCourse>70</positionInCourse>
+		<progress>90</progress>
+		<proctoring>
+			<isProctored>true</isProctored>
+			<type>...</type>
+			<institution>ref to hpi</institution>
+			<technology>...</technology>
+		</proctoring>
+	</grade>
+	<learningObjects>
+		<learningObject>...</learningObject>
+	</learningObjects>
+	<requirements>
+		<requirement>...</requirement>
+	</requirements>
+	<courseSchema>23</courseSchema>
+	<workload>12</workload> ///range ???
+        <issuingInstitute>ref to hpi</issuingInstitute>
+	<display>...</display>
+	<disclaimer>...</disclaimer>
+	<courseID>1</courseID>
+</certificate>

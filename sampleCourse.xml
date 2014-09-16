@@ -1,107 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- created with XMLSpear -->
 <course>
-    <title>Example Course</title>
-    <url>http://data-gov.tw.rpi.edu/vocab/Dataset_1200</url>
-    <abstract>This is a sample abstract, which is just a short discription of this course.</abstract>
-    <description>This is a description of this course.</description>
+    <name>Sicherheit im Internet</name>
+    <url>https://open.hpi.de/courses/intsec2014</url>
+    <abstract>Pressemeldungen über den Diebstahl sensibler Daten in bislang ungekannten Größenordnungen verdeutlichen immer wieder...</abstract>
+    <description>Der Kurs erklärt zunächst Grundbegriffe, wie z.B. \"Schwachstelle\", \"Angriff\" oder \"Sicherheitszwischenfall\"...</description>
     <categories>
-        <category>computer science</category>
-        <category>internet</category>
+        <category>Computer Science</category>
+        <category>Internet</category>
     </categories>
-    <difficulty>Easy</difficulty>
+    <difficulty>Beginner</difficulty>
     <requirements>
-        <requirement>requirement1</requirement>
-        <requirement>requirement2</requirement>
+        <requirement>Interest in Internet Security</requirement>
+        <requirement>courseref:internetworking2013</requirement>
     </requirements>
-    <goals>
-        <goal>learn sth.</goal>
-        <goal>goal2</goal>
-    </goals>
-    <costs>0</costs>
+    <learningObjectives>
+        <learningObjective>learn sth.</learningObjective>
+        <learningObjective>goal2</learningObjective>
+    </learningObjectives>
+    <costs>
+       <priceCurrency>EUR</priceCurrency>
+       <price>0</price>
+    </costs>
+    
     <languages>
-        <language>English</language>
+        <language>en</language>
     </languages>
-    <workload>12</workload> //range check xsl range
-    <start>2014-07-01T12:00:00</start>
-    <end>2014-09-01T12:00:00</end>
+    <workload>
+       <lowerBound>3</lowerBound>
+       <upperBound>8</upperBound>
+    </workload>
+    <startDate>2014-07-01T12:00:00</startDate>
+    <endDate>2014-09-01T12:00:00</endDate>
     <duration>P8W</duration>
-    <picture>
-        <file>test.jpg</file>
-    </picture>
-    <video>
-        <file>test.wav</file>
-    </video>
-    <certificate>
-        <type>honor code certificate</type>
-        <user>
-            <name>Jane Doe</name>
-            <email>jane.doe@example.com</email>
-            <dob>12.09.1984</dob>
-            <affiliation>german</affiliation> ?????
-        </user>
-        <issuingPlatform>
-            <name>openHPI</name>
-            <description>openHPI description</description>
-        </issuingPlatform>
-        <issueDate>2014-08-01T12:00:00</issueDate>
-        <signedByIssuePerson>true</signedByIssuePerson>
-        <issuerPersons>
-            <issuerPerson>Martina Musterfrau</issuerPerson>
-        </issuerPersons>
-        <safety>
-            <verificationURI>...</verificationURI>
-            <qrCode>...</qrCode>
-        </safety>
-        <grade>
-            <badges>
-                <badge>with distinction</badge>
-            </badges>
-            <totalPoints>100</totalPoints>
-            <percentage>70</percentage>
-            <positionInCourse>70</positionInCourse>
-            <progress>90</progress>
-            <proctoring>
-                <isProctored>true</isProctored>
-                <type>...</type>
-                <institution>ref to hpi</institution>
-                <technology>...</technology>
-            </proctoring>
-        </grade>
-        <learningObjects>
-            <learningObject>...</learningObject>
-        </learningObjects>
-        <requirements>
-            <requirement>...</requirement>
-        </requirements>
-        <courseSchema>23</courseSchema>
-        <workload>12</workload> ///range ???
-        <issuingInstitute>ref to hpi</issuingInstitute>
-        <display>...</display>
-        <disclaimer>...</disclaimer>
-        <courseID>1</courseID>
-    </certificate>
+    <picture>test.jpg</picture>
+    <video>test.mp4</video>
     <instructors>
         <instructor>
-            <name>Max Mustermann</name>
-            <role>exercise instructor</role>
+            <name>Christoph Meinel</name>
+            <academicTitle>Prof.</academicTitle>
+            <academicTitle>Dr.</academicTitle>
+            <role>Course Instructor</role>
         </instructor>
     </instructors>
     <partnerInstitute>
-        <name>Hasso-Plattner-Institut</name>
-        <description>Hasso-Plattner-Institut description ...</description>
+        <name>Hasso Plattner Institute</name>
+        <description>The Hasso Plattner Institute is a ...</description>
     </partnerInstitute>
     <moocProvider>openHPI</moocProvider>
-    <subject>
-        <type>chapter</type>
+    <units>
+       <unit>
+        <name>Week 1</name>
+        <description>Einführung. Übersicht. Kursplan, etc.</description>
         <videos>
-            <video>test.wav</video>
+            <video>test.mp4</video>
         </videos>
-        <description>This is a sample description for this sample chapter.</description>
-        <questions>
-            <question>Question1</question>
-        </questions>
-    </subject>
+        <assignments>
+            <assignment>
+            	<name>Weekly Assignment 1</name>
+            </assignment>
+        </assignments>
+       </unit>
+    </units>
     <deadlines>
         <deadline>
             <questions>
