@@ -26,5 +26,3 @@ Acknowledgements
 - Initial suggestion by Jan Renz (HPI/openHPI)
 - The workload attribute has been changed from type number to type range by suggestion of class-central.com
 - The license attribute has been added by suggestion of Laia Canals from openeducationeuropa.eu/paueducation.com
-- XML/XSD by Thomas Staubitz (HPI/openHPI)
-- Refactoring for second iteration by Thomas Staubitz (HPI/openHPI)
