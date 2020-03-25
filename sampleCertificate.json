@@ -19,8 +19,8 @@
     "issuingPersons": [
         {
         	"name": "Christoph Meinel",
-			"academicTitle": ["Prof.", "Dr."],
-			"role": ["course instructor", "head of institute"]
+		"academicTitle": ["Prof.", "Dr."],
+		"role": ["course instructor", "head of institute"]
         }
     ],
     "verifiability": {
@@ -36,19 +36,19 @@
     },
     "grade": {
         "badges": [
-			"with distinction",
-			"Email Security"
-		],
+		"with distinction",
+		"Email Security"
+	],
         "totalPoints": 100,
         "percentage": 70,
-		"minPercentage": 50,
+	"minPercentage": 50,
         "positionInCourse": 20,
         "progress": 80
     },
     "courseSchema": 23,
     "workload": {
     	"lowerBound": 3,
-		"upperBound": 8
+	"upperBound": 8
     },
     "issuingInstitute": "ref to hpi",
     "display": "...",
